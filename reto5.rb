@@ -14,4 +14,6 @@ definitions.each do |value|
         break if valid
     end
 end
+
+puts "Felicitaciones!! Has completado todas las definiciones correctamente!"
     
