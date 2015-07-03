@@ -40,10 +40,12 @@ class Reto5
                 @attempts += 1
                 break if valid
             end
+        end
     end
     
     def congratulate
-        puts "Felicitaciones!! Has completado todas las definiciones correctamente!", "Score: #{@attempts} intentos de #{@questions} preguntas"
+        puts "Felicitaciones!! Has completado todas las definiciones correctamente!",
+             "Score: #{@attempts} intentos de #{@questions} preguntas"
     end
     
     def get_definitions
