@@ -1,4 +1,4 @@
-"Un tipo de archivo en el que todos los valores están delmitados por comas","CSV"
+"Un tipo de archivo en el que todos los valores están delimitados por comas","CSV"
 "Es el scripting language nativo del navegador","Javascript"
 "Es el lenguaje de consultas standard de las bases de datos relacionales","SQL"
 "Es el lenguaje de marcación utilizado para representar información en el navegador","HTML"
