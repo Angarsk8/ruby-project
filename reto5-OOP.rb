@@ -29,6 +29,17 @@ class Reto5
     end
     
     def play(list_of_definitions)
+        list_of_definitions.each do |definition|
+            puts "Definición", "#{definition[0]}:"
+            loop do
+                print "Adivinar: "
+                answer = nil
+                loop {break unless (answer = gets.chomp.strip.downcase).empty?}
+                valid = answer == definition[1].downcase
+                puts valid ? "Correcto" : "Incorrecto, Trata de nuevo"
+                @attempts += 1
+                break if valid
+            end
     end
     
     def congratulate
