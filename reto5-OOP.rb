@@ -56,3 +56,6 @@ class Reto5
     
     private :load_definitions, :greet, :play, :congratulate
 end
+    
+session1 = Reto5.new('definitions.txt')
+session1.start
