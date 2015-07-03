@@ -3,6 +3,9 @@ require 'csv'
 class Reto5
     
     def initialize(text_file_name)
+        @definitions = load_definitions(text_file_name)
+        @questions = @definitions.length
+        @attempts = 0
     end
     
     def start
