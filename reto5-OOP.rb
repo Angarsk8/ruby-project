@@ -47,6 +47,7 @@ class Reto5
     end
     
     def get_definitions
+        @definitions
     end
     
     def get_last_attempts
