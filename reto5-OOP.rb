@@ -23,6 +23,9 @@ class Reto5
     end
     
     def greet
+        initial_message ||=  "Bienvenido a reto 5. Para jugar solo ingresa el término "
+        initial_message += "correcto para cada una de las definiciones. Listo? Vamos!!"
+        puts initial_message
     end
     
     def play(list_of_definitions)
