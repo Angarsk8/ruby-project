@@ -51,6 +51,7 @@ class Reto5
     end
     
     def get_last_attempts
+        @attempts
     end
     
     private :load_definitions, :greet, :play, :congratulate
