@@ -19,6 +19,7 @@ class Reto5
     end
     
     def load_definitions(text_file_name)
+        CSV.read(text_file_name).shuffle
     end
     
     def greet
