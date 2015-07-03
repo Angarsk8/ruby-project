@@ -13,7 +13,7 @@ class Reto5
             greet
             play(@definitions)
             congratulate
-        rescue
+        rescue Exception => e
             puts e.message
         end
     end
