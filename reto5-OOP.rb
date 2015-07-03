@@ -9,6 +9,13 @@ class Reto5
     end
     
     def start
+        begin
+            greet
+            play(@definitions)
+            congratulate
+        rescue
+            puts e.message
+        end
     end
     
     def load_definitions(text_file_name)
