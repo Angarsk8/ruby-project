@@ -60,4 +60,7 @@ class Reto5
 end
     
 session1 = Reto5.new('definitions.txt')
+#p session1.get_definitions
+#p session1.get_last_attempts
 session1.start
+#p session1.get_last_attempts
