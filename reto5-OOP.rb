@@ -23,9 +23,8 @@ class Reto5
     end
     
     def greet
-        initial_message ||=  "Bienvenido a reto 5. Para jugar solo ingresa el término "
-        initial_message += "correcto para cada una de las definiciones. Listo? Vamos!!"
-        puts initial_message
+        print "Bienvenido a reto 5. Para jugar solo ingresa el término ",
+              "correcto para cada una de las definiciones. Listo? Vamos!!"
     end
     
     def play(list_of_definitions)
@@ -45,7 +44,7 @@ class Reto5
     
     def congratulate
         puts "Felicitaciones!! Has completado todas las definiciones correctamente!",
-             "Score: #{@attempts} intentos de #{@questions} preguntas"
+             "Resultado: #{@attempts} intentos de #{@questions} preguntas"
     end
     
     def get_definitions
