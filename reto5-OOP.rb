@@ -2,6 +2,7 @@ require 'csv'
 
 class Reto5
     
+    attr_reader :definitions, :attempts
     def initialize(text_file_name)
         @definitions = load_definitions(text_file_name)
         @questions = @definitions.length
@@ -46,20 +47,9 @@ class Reto5
         puts "Felicitaciones!! Has completado todas las definiciones correctamente!",
              "Resultado: #{@attempts} intentos de #{@questions} preguntas"
     end
-    
-    def get_definitions
-        @definitions
-    end
-    
-    def get_last_attempts
-        @attempts
-    end
-    
+
     private :load_definitions, :greet, :play, :congratulate
 end
     
 session1 = Reto5.new('definitions.txt')
-#p session1.get_definitions
-#p session1.get_last_attempts
 session1.start
-#p session1.get_last_attempts
